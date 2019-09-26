@@ -4,10 +4,12 @@
 \alias{mapOccur}
 \title{Mapea los puntos de una tabla Ocurrencia}
 \usage{
-mapOccur(data = data, buffer = 0)
+mapOccur(data = data, colId = "id", buffer = 0)
 }
 \arguments{
 \item{data}{un dataframe con la tabla EventCore}
+
+\item{colId}{el nombre de la columna con ID entre comillas}
 
 \item{buffer}{valor numerico en kilometros para aplicar buffer a cada punto}
 }
@@ -18,9 +20,6 @@ los puntos ubicados en el mapa
 Genera un mapa dinámico con los puntos georeferenciados de una tabla EventCore.
 Cada punto será de color verde si cae en el oceano o de color rojo si cae en tierra.
 Al hacer clic en el punto aparece la información de eventID, localidad, y coordenadas.
-}
-\seealso{
-formulas relacionadas???
 }
 \author{
 Carlos Zamora-Manzur \email{carzamora@gmail.com}
